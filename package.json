@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "2.0.0",
+  "description": "ye kuch bhi ho sakti ahi",
+  "main": "index.js",
+  "scripts": {
+    "test": "node vegies.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "pta",
+    "nhi"
+  ],
+  "author": "shubhanshu",
+  "license": "ISC"
+}
