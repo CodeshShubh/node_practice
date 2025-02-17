@@ -3,11 +3,11 @@
   "version": "2.0.0",
   "description": "ye kuch bhi ho sakti ahi",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node vegies.js",
     "start": "node index.js",
     "dev": "nodemon index.js"
-
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
     "nhi"
   ],
   "author": "shubhanshu",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
