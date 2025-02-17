@@ -1,18 +1,21 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 
 const app = express();
 
 
+app.use(bodyParser.json());
+
 app.get('/', (req,res)=>{
-     res.send('Home Page')
+    res.send('this is respose from server')
 })
 
-app.get('/about', (req,res)=>{
-   res.send(` this is About page ${req.query.name}`)
+app.post('/calculation', (req,res)=>{
+   const {num1, num2} = req.body;
+    res.send(`The sum of two number is ${num1+num2}`)
 })
 
-
-
-app.listen(8000, 'localhost', ()=>{
- console.log (`server is working on : 8000`)
+const port = 8000;
+app.listen(port, ()=>{
+    console.log(`server is wrking on port ${port}`)
 })
