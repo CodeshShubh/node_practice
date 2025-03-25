@@ -1,0 +1,51 @@
+SERVER ->
+
+1 - create a node app using npm init -y
+2 - install express socket.io
+3 - install cors(for security)
+ -> CORS which clients have access to 
+ over server only allows permitted links
+4- nodemon for dev help
+
+5-> initilized server using express and create variable app
+6-> import {createServer} from http
+7-> and pass app to the createServer for handshakes
+ const server = createServer(app);
+
+(because of whenever we bulid socket.io server we use http
+ handshakes to initilise an set up the server)
+8 -> import {server} from socket.io
+9-> we are creating a server named io
+10-> io.on('connection',()=>{}) this handles the connection
+
+
+CLIENT ->
+1.-> npm create vite@latest
+2->install socket.io-client
+
+
+
+Description of the chat app
+-> full stack chat application
+-> server security enable using cors
+-> front end built on react using vite
+-> web RTC implemented using socket.io
+
+
+
+
+
+soket.emit -> to send message to a client
+
+io.emit -> to send message to the whole server
+
+socket.broadcast.emit -> to send message to everone execpt the sender
+
+socket.on -> to write reciever handling logic of the emit logic
+
+
+socket.to().emit -> it send message to a specified client
+
+
+every client has a specific id -> we can create rooms -> to enable personal messaging 
+we can create a room and add only one person in it to allow person to person contact
