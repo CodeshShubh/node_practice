@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 // createfile or writefile
 // if(!fs.existsSync('./text.txt')){
 //     fs.writeFile('./text.txt', 'text', (err)=>{
